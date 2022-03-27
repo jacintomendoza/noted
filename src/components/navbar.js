@@ -14,7 +14,7 @@ class navbar extends React.Component {
                 display: "flex"
             }}>
                 <header className="app-header" style={{display: "flex"}}>
-                    <h1 className="app-title">Project Noted!</h1>
+                    <h1 className="app-title">React Playground!</h1>
                     <div className="links" style={{}}>
                         <Link to="/about">About</Link>
                         <Link to="/noted">Noted</Link>
