@@ -1,6 +1,8 @@
 import './App.css';
-import { BrowserRouter, Switch, Route, Redirect, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Redirect, Routes} from 'react-router-dom';
 import NavBar from './components/navbar'
+import About from './components/about/about';
+
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <div className="app">
           
         </div>
-      }></Route>
+      }/>
+
+      <Route path='/about' element={<About/>}/>
 
       <Route path="*" element={
         <div>Error, not a defined route</div>
