@@ -1,5 +1,4 @@
 import React from "react";
-import About from './about/about';
 import { BrowserRouter, Link, Route, Redirect, Router} from 'react-router-dom';
 
 
@@ -17,7 +16,8 @@ class navbar extends React.Component {
                     <h1 className="app-title">React Playground!</h1>
                     <div className="links" style={{}}>
                         <Link to="/about">About</Link>
-                        <Link to="/noted">Noted</Link>
+                        {/* <Link to="/notes">Notes</Link>
+                         */}
                     </div>
                     
                 </header>

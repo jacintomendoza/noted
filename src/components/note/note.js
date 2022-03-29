@@ -1,5 +1,16 @@
 import React, { PureComponent } from 'react';
 
+const notes = [
+    {
+      id: '4e81fc6e-bfb6-419b-93e5-0242fb6f3f6a',
+      task: 'Learn React'
+    },
+    {
+      id: '11bbffc8-5891-4b45-b9ea-5c99aadf870f',
+      task: 'Do laundry'
+    }
+  ];
+
 class note extends React.Component {
     state = {
         num: 0
@@ -24,9 +35,18 @@ class note extends React.Component {
     
                     </div>
                 </div>
+
+                {/* <ul>{notes.map(note =>
+                    <li key={note.id}>{note.task}</li>
+                )}</ul> */}
+
+
             </React.Fragment>
         );
     }
 }
+
+
  
 export default note;
+

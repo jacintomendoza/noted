@@ -10,6 +10,7 @@ Deploying to gh-pages
 Added to package.json:
 ```
 "homepage": "https://jacintomendoza.github.io/react-playground"
+"predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 ```
 ```
