@@ -30,11 +30,12 @@ class Api extends Component {
 
     render() { 
         var { isLoaded, items } = this.state;
+        // jsx: (!isLoaded) <div>Loading...</div> : <div>everything else</div>
         if (!isLoaded) {
             return <div>Loading...</div>;
         }
         else {
-            return <div>
+            return <React.Fragment>
                     {items.map(item => (
                         <div key={item.id} className="moto" style={{"backgroundColor": "pink", "margin": "30px 30px"}}>
                             <li><strong>ID: </strong>{item.id}</li>
@@ -45,7 +46,7 @@ class Api extends Component {
                             <li><strong>InvCount: </strong>{item.invCount}</li>
                         </div>      
                     ))}
-            </div>
+            </React.Fragment>
         };
     }
 }
